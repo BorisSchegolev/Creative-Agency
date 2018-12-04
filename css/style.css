@@ -1,0 +1,269 @@
+/* Please do not use this import in production. You could download this font from here https://fontstorage.com/font/roboto */
+@import "http://fonts.fontstorage.com/import/roboto.css";
+/*
+	Roboto, 100, 100 italic, 300, 300 italic, 400, 400 italic, 500, 500 italic, 700, 700 italic, 900, 900 italic
+*/
+
+/* Please do not use this import in production. You could download this font from here https://fontstorage.com/font/playfair-display */
+@import "http://fonts.fontstorage.com/import/playfair.css";
+/*
+	Playfair Display, 400, 400 italic, 700, 700 italic, 900, 900 italic
+*/
+
+html, body, header, #intro {
+    height: 100%;
+}
+
+ul, li, div {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#intro {
+    position: relative;
+    background: url("../img/header-photo.png") center center no-repeat fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+#intro:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #41326a;
+    opacity: .85;
+}
+
+.top-nav-collapse {
+    background-color: #04075c;
+    opacity: .8;
+}
+
+
+.logo-text {
+    font-family: Roboto, sans-serif;
+    font-size: 30px;
+    color: cyan;
+}
+
+.nav-link {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.nav-link  {
+    color: cyan;
+}
+
+.header-title {
+    font-size: 36px;
+    font-family: Playfair Display, sans-serif;
+}
+
+.header-text {
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+/*our story*/
+
+.our-story {
+    padding: 70px 0;
+}
+.headline {
+    font-family: Playfair Display, sans-serif;
+    font-weight: bold;
+}
+
+/*play*/
+
+#play {
+    position: relative;
+    height: 34rem;
+    background: url("../img/play-photo.png") center center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+#play:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #41326a;
+    opacity: .85;
+}
+/*expertise*/
+#expertise {
+    padding: 70px 0 100px;
+}
+
+/*meet our*/
+
+#meet-our {
+    position: relative;
+    background: url("../img/meet-our.png") center center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    padding: 70px 0;
+}
+
+#meet-our:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #41326a;
+    opacity: .85;
+}
+
+.card-text {
+    font-size: 13px;
+    font-family: Roboto, sans-serif;
+}
+
+/*OUR WORK*/
+.our-work {
+    padding: 70px 0;
+}
+
+.sec-text {
+    font-family: Playfair Display, sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+}
+.block {
+     width: 16.5vw;
+     height: 12vw;
+ }
+ .container-fluid {
+     padding-left: 0;
+     padding-right: 0;
+ }
+
+
+/*COMMAS*/
+
+.comma {
+    position: relative;
+    background: url("../img/section.png") center center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    padding: 70px 0;
+}
+
+.comma:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #41326a;
+    opacity: .85;
+}
+
+.form {
+    padding: 70px 0;
+}
+#form input,
+textarea {
+    border: 1px solid grey;
+}
+
+.page-footer {
+    min-height: 400px;
+    height: auto;
+    position: relative;
+    background: url("../img/footer.png") center center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.page-footer:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #41326a;
+    opacity: .8;
+}
+.footer-link {
+    position: absolute;
+    bottom: 0;
+}
+.footer-link a {
+    font-size: 14px;
+    font-family: Roboto, sans-serif;
+    margin-right: 50px;
+}
+.footer-link a:last-child {
+    margin-right: 0;
+}
+.address p {
+    padding-right: 80px;
+}
+.copy {
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    right: 21%;
+}
+
+.form-control {
+    width: 210px;
+    background: transparent;
+    border-radius: 0;
+    font-size: 14px;
+}
+
+.bg {
+    background: #ffffff;
+    opacity: .6;
+}
+
+@media screen and (max-width: 992px){
+    .copy {
+        position: static;
+        margin-top: 40px;
+        margin-bottom: 50px;
+        right: 0;
+    }
+    .footer-link {
+        position: static;
+        margin-bottom: 30px;
+    }
+    .footer-link a {
+        margin-right: 0;
+    }
+    .page-footer div {
+        justify-content: center;
+    }
+    .address p {
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .our-clients {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .client {
+        margin-bottom: 50px;
+    }
+}
+
+
+
